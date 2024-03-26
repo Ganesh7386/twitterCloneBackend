@@ -1,0 +1,41 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+  "username": "Ganesh",
+  "password": "2002@ganesh",
+  "name": "gani",
+  "gender": "male"
+}
+####
+
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "JoeBiden",
+    "password": "biden@123"
+}
+####
+
+GET http://localhost:3000/user/tweets/feed
+Authorization: Bearer eyJhiOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoiSm9lQmlkZW4iLCJpYXQiOjE3MTEzNjIwMjZ9.fz4Q4iXpOhE84fjk3YskKzz3Ji3lqTpjBRq_c-jeigU
+
+####
+
+GET http://localhost:3000/user/following/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInRXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoiSm9lQmlkZW4iLCJpYXQiOjE3MTEzODAxODl9.VRt99sYrwplnuYcz6Re3akacTJ3xj3loFuj3eGppFb8
+
+####
+
+GET http://localhost:3000/user/followers/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoiSm9lQmlkZW4iLCJpYXQiOjE3MTE0MjcwNjN9.1ID5NymU4TC_R0Fp_8yd-Umfmc_gPRC-QTmWkyvYk1w
+####
+
+GET http://localhost:3000/tweets/8/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoiSm9lQmlkZW4iLCJpYXQiOjE3MTE0MzAxMjZ9.KHSUOt-_PQ8YFGNu0exTUStAPHEgofuT78I_uiTD6Iw
+####
+
+GET http://localhost:3000/tweets/1/likes/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoiSm9lQmlkZW4iLCJpYXQiOjE3MTE0MzA5NTd9.Bs_V_ytIE5jsHqPloMWbdFC_-BlN_fs-3Cao3eBd4RA
+####
