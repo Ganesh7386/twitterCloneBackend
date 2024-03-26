@@ -37,5 +37,26 @@ Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVz
 ####
 
 GET http://localhost:3000/tweets/1/likes/
-Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoiSm9lQmlkZW4iLCJpYXQiOjE3MTE0MzA5NTd9.Bs_V_ytIE5jsHqPloMWbdFC_-BlN_fs-3Cao3eBd4RA
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoiSm9lQmlkZW4iLCJpYXQiOjE3MTE0MzMxMjF9.JViCpzcz33V_NizRThc90speMepfzV06YYewyaO3E_s
 ####
+
+GET http://localhost:3000/tweets/1/replies/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoiSm9lQmlkZW4iLCJpYXQiOjE3MTE0MzMyNzd9.GT4vB-ALXV41TQZnWVb_2HuCtvQEb-hKmXwjV-pHhcY
+####
+
+GET http://localhost:3000/user/tweets/
+Authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsInVzZXJuYW1lIjoiSm9lQmlkZW4iLCJpYXQiOjE3MTE0Mzc5NTd9.lat0AMNQVwqT3BUhcS_13d2UCLaOX19pniHMB-v8D-E
+####
+
+POST http://localhost:3000/user/tweets/
+Authorization: Bearer 982738783782872897287287982982782989
+
+Content-Type: application/json
+
+{
+    "tweet" : "The mornings"
+}
+####
+
+DELETE http://localhost:3000/tweets/4/
+Authorization: Bearer 
